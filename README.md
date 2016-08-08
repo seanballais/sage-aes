@@ -1,2 +1,2 @@
-# sage-aes
-An election system built using Botos and using a customized template.
+# botos
+An online election system
