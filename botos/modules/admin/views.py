@@ -134,8 +134,7 @@ def register_voters():
 
 @app.route('/admin/generate_stats',
            methods=[
-               'POST',
-               'GET'
+               'POST'
            ])
 def generate_stats():
     """
@@ -143,6 +142,8 @@ def generate_stats():
     """
     pdf_generator = admin_controllers.VotePDFGenerator()
     pdf_generator.generate_pdf()
+
+    flash(Markup('<a href="/{0}" target="_blank">Download Voter Statistics (PDF)</a>'.format(pdf_generator.pdf_link)))
 
     return redirect('/admin')
 
