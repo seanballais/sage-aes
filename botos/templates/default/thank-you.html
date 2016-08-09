@@ -1,12 +1,27 @@
 {% extends "default/base.html" %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <h1 class="center-text">Thank you for voting!</h1>
+    <div class="row-fluid">
+        <div class="header-text-3 col-xs-12 col-md-6 col-centered">
+            <img src="/assets/img/banner.png" width="300px">
+            <h1>THANK YOU!</h1>
+        </div>
+
+        <div id="thank-you-instructions" class="col-xs-12 col-md-6 col-centered">
+            <div class="checkmark">
+                <img src="/assets/img/checkmark.png" width="150">
+            </div>
+            <h3>Awesome! Your vote has been casted and stored in the database. Final results will be announced at a later time. <br><br>You may now logout of the election system.</h3>
             <form action="/logout" method="post">
                 <button class="btn btn-danger center-block" name="logout" value="logout">Logout</button>
             </form>
+            <div class="easter-egg">
+                <h3>
+                    <small>
+                        {{ easter_egg_msg }}
+                    </small>
+                </h3>
+            </div>
         </div>
     </div>
 {% endblock %}

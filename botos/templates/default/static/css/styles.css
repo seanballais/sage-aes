@@ -16,11 +16,15 @@
 html,
 body {
     background: url('/assets/img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a.radio-picture {
     display: inline-block;
-    height: 160px;
+    height: 150px;
     width: 150px;
     opacity: 1.0;
     transition: all 0.3s ease;
@@ -148,17 +152,79 @@ form#login-form div input#login-submit {
     border-bottom-right-radius: 7px;
 }
 
-div.header-text {
+form#login-form div input#login-submit {
+    background-color: rgb(24, 111, 161);
+    border-color: rgb(24, 111, 161);
+}
+
+div.header-text,
+div.header-text-2,
+div.header-text-3 {
     font-family: Oswald;
     color: #ffffff;
 
-    margin-top: 5%;
-    margin-bottom: 7%;
+    margin-top: 2%;
 
     text-align: center;
+}
+
+div.header-text {
+    margin-bottom: 6%;
+}
+
+div.header-text-2 {
+    font-family: Oswald;
+    color: #ffffff;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    text-align: center;
+}
+
+form#voting-form {
+    color: #ffffff;
+}
+
+form#voting-form input#vote-button {
+    background-color: rgb(24, 111, 161);
+    border-color: rgb(24, 111, 161);
+}
+
+div.header-text-2 img {
+    margin-bottom: 2%;
+}
+
+div.header-text-3 h1 {
+    font-family: Oswald;
+    font-size: 6em;
 }
 
 div.header-text h1 {
     font-size: 7em;
     text-transform: uppercase;
+}
+
+div.footer-text,
+div#vote-instructions,
+div#thank-you-instructions {
+    text-align: center;
+}
+
+div#thank-you-instructions,
+div#vote-instructions,
+div#vote-instructions small {
+    color: #ffffff;
+}
+
+div#thank-you-instructions {
+    font-family: Oswald;
+}
+
+div#thank-you-instructions div.checkmark {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.easter-egg {
 }

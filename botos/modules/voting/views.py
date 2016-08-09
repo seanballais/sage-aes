@@ -11,6 +11,7 @@
 
 import json
 import collections
+import random
 
 from flask import render_template
 from flask import flash
@@ -310,11 +311,32 @@ def vote_thank_you():
     :return: Render the thank you page.
     """
     if not current_user.is_active():
+        easter_egg_msg = [
+            "",
+            "May the odds be ever in your candidate's favor...or maybe not.",
+            "Rest assured that no f*censored* cheating idiot will be able to rig the votes. :)",
+            "",
+            "",
+            "",
+            "Achievement unlocked: Nothing.",
+            "",
+            "The developer of this election system has not been paid.",
+            "",
+            "Remember, walang forever sa high school.",
+            "#seanwasir",
+            "Now, <i>shoo shoo</i>. <small>Not choo choo. Ha..ha. Very funny. Ha..ha.</small>",
+            "OMG! Ma'am Rachel is ❤. OMG! OMG! OMG! I kennot! OMG!",
+            "Tara! Agriculture na tayo!",
+            "Notice me, sensei (Ma'am Rachel)! Please. ❤"
+        ]
+
         logger.add_log(20,
                        'Voter {0} finished voting. Accessing thank you page.'.format(current_user.id)
                        )
 
-        return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')))
+        return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')),
+                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, 15)])
+                               )
 
     logger.add_log(20,
                    'Someone attempted to visit the thank you. Not sure if it was a voter, admin, or someone anonymous.'
