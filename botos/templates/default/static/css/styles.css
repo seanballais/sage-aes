@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Oswald;
+    src: url('/assets/fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('/assets/fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url('/assets/fonts/Oswald-Light.ttf');
+}
+
+html,
+body {
+    background: url('/assets/img/bg.jpg') no-repeat center center fixed;
+}
+
 a.radio-picture {
     display: inline-block;
     height: 160px;
@@ -13,6 +33,11 @@ a.radio-picture:hover {
 
 .selected-glow {
     border: 7px solid #33ccff;
+}
+
+div.col-centered {
+    float: none;
+    margin: 0 auto;
 }
 
 ul {
@@ -121,4 +146,19 @@ form#login-form div input#login-submit {
     -ms-border-bottom-right-radius: 7px;
     -o-border-bottom-right-radius: 7px;
     border-bottom-right-radius: 7px;
+}
+
+div.header-text {
+    font-family: Oswald;
+    color: #ffffff;
+
+    margin-top: 5%;
+    margin-bottom: 7%;
+
+    text-align: center;
+}
+
+div.header-text h1 {
+    font-size: 7em;
+    text-transform: uppercase;
 }

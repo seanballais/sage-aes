@@ -1,11 +1,14 @@
 {% extends "default/base.html" %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <h1 class="center-text">Botos Login</h1>
+    <div class="row-fluid">
+        <div class="header-text col-xs-12 col-md-6 col-centered">
+            <h1>Vote Now</h1>
+            <h5>For the next set of voters of PSHS-EVC Student Alliance Officers</h5>
+        </div>
+        <div class="col-xs-12 col-md-4 col-centered">
             <form id="login-form" action="/login" method="post" name="login">
-                <div class="input-group">
+                <div class="input-group center-block">
                     {{ form.hidden_tag() }}
                     {{ form.username(size=40, class="form-control") }}
                     {{ form.password(size=40, class="form-control") }}
