@@ -268,7 +268,7 @@ class VotePDFGenerator:
         _pdf_filename = '{0}-{1}.pdf'.format(time.strftime('%Y%m%d'),
                                              time.strftime('%H%M%S')
                                              )
-        self.pdf_link = 'content/xlsx/{0}'.format(_pdf_filename)
+        self.pdf_link = 'content/pdf/{0}'.format(_pdf_filename)
         self.filename = '{0}/{1}'.format(settings.PDF_DIRECTORY,
                                          _pdf_filename
                                          )
