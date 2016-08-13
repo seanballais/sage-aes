@@ -11,10 +11,7 @@
             <div class="checkmark">
                 <img src="/assets/img/checkmark.png" width="150">
             </div>
-            <h3>Awesome! Your vote has been casted and stored in the database. Final results will be announced at a later time. <br><br>You may now logout of the election system.</h3>
-            <form action="/logout" method="post">
-                <button class="btn btn-danger center-block" name="logout" value="logout">Logout</button>
-            </form>
+            <h3>Awesome! Your vote has been casted and stored in the database. Final results will be announced at a later time.<br></h3>
             <div class="easter-egg">
                 <h3>
                     <small>
@@ -22,6 +19,23 @@
                     </small>
                 </h3>
             </div>
+            <div id="button-area" class="row-fluid">
+                <div class="col-xs-12 col-md-3">
+                    <button id="revote" class="btn btn-warning">Check current statistics</button>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-xs-12 col-md-3">
+                    <form id="logout" action="/logout" method="post">
+                        <button class="btn btn-danger" name="logout" value="logout">Logout ></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="rick-ee" class="col-xs-12 col-centered">
+        <video src="/assets/video/ee/rick-astley.mp4" id="rick" width="800" preload="none"></video>
+        <button class="btn btn-warning center-block">Save me from this horror, please! Ahhh!</button>
+    </div>
+    <script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/ee-thank-you.js"></script>
 {% endblock %}

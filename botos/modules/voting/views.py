@@ -126,13 +126,9 @@ def generate_candidate_script_code(candidate_position):
         '\t\t\t$("a.' + str_position + '").click(function() {\n'
         '\t\t\t\tvar input_clicked = $(this).parent().siblings("input");\n'
         '\t\t\t\tif (input_clicked.is(":checked")) {\n'
-        'console.log("Clicked before.");'
-        'console.log(input_clicked);'
         '\t\t\t\t\t$("a.' + str_position + '").removeClass("selected-glow");\n'
         '\t\t\t\t\tinput_clicked.prop("checked", false);\n'
         '\t\t\t\t} else {\n'
-        'console.log("Oh really?");'
-        'console.log(input_clicked);'
         '\t\t\t\t\tinput_clicked.prop("checked", true);\n'
         '\t\t\t\t\t$("a.' + str_position + '").removeClass("selected-glow");\n'
         '\t\t\t\t\t$(this).addClass("selected-glow");\n'
@@ -310,17 +306,15 @@ def vote_thank_you():
 
     :return: Render the thank you page.
     """
-    if not current_user.is_active():
+    if not current_user.is_active and current_user.is_authenticated:
         easter_egg_msg = [
             "",
             "May the odds be ever in your candidate's favor...or maybe not.",
-            "Rest assured that no f*censored* cheating idiot will be able to rig the votes. :)",
             "",
             "",
             "",
             "Achievement unlocked: Nothing.",
             "",
-            "The developer of this election system has not been paid.",
             "",
             "Remember, walang forever sa high school.",
             "#seanwasir",
@@ -335,7 +329,7 @@ def vote_thank_you():
                        )
 
         return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')),
-                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, 15)])
+                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, easter_egg_msg.length - 1)])
                                )
 
     logger.add_log(20,

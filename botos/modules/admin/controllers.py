@@ -342,10 +342,10 @@ class VoterExcelGenerator:
                                                               time.strftime('%Y%m%d'),
                                                               time.strftime('%H%M%S')
                                                               )
-        self.xlsx_link    = 'content/pdf/{0}'.format(_xlsx_filename)
         self.filename     = '{0}/{1}'.format(settings.XLSX_DIRECTORY,
                                              _xlsx_filename
                                              )
+        self.xlsx_link    = 'content/xlsx/{0}'.format(_xlsx_filename)
         self.xlsx_book    = xlsxwriter.Workbook(self.filename)
         self.xlsx_sheet   = self.xlsx_book.add_worksheet()
 

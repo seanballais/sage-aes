@@ -67,7 +67,7 @@ ul > li > input {
     top: -1000px;
 }
 
-h1.center-text {
+.center-text {
     text-align: center;
 }
 
@@ -157,6 +157,18 @@ form#login-form div input#login-submit {
     border-color: rgb(24, 111, 161);
 }
 
+div#agri-ee {
+    display: none;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+div#agri-ee img {
+    margin: 0 auto;
+}
+
 div.header-text,
 div.header-text-2,
 div.header-text-3 {
@@ -169,7 +181,8 @@ div.header-text-3 {
 }
 
 div.header-text {
-    margin-bottom: 6%;
+    margin-top: 3%;
+    margin-bottom: 4%;
 }
 
 div.header-text-2 {
@@ -217,6 +230,15 @@ div#vote-instructions small {
     color: #ffffff;
 }
 
+h6#ee-nicolas {
+    cursor: pointer;
+    display: none;
+}
+
+h6#ee-nicolas:hover {
+    text-decoration: underline;
+}
+
 div#thank-you-instructions {
     font-family: Oswald;
 }
@@ -226,5 +248,19 @@ div#thank-you-instructions div.checkmark {
     padding-bottom: 5px;
 }
 
-div.easter-egg {
+div#button-area {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+div#rick-ee {
+    display: none;
+    position: absolute;
+    top: 17%;
+    text-align: center;
+    z-index: 1000;
+}
+
+div#rick-ee button {
+    display: block;
 }
