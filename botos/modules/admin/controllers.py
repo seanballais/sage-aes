@@ -185,7 +185,7 @@ class VotePDFGenerator:
                     num_voters_rows.append(num_voters_rows_count)
 
                     table_data.append(['          ', '          ', 'Total Number of Votes', str(total_votes)])
-                    table_data.append(['          ', '          ', 'Abstentions', str(num_voters - total_votes)])
+                    table_data.append(['          ', '          ', 'Abstentions', str(max(0, num_voters - total_votes))])
 
                     num_voters_rows_count += 2
                     header_row_count += 3
