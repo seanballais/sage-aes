@@ -166,13 +166,16 @@ def register_batch():
                    )
 
     if batch_creation_form.validate_on_submit():
-        app_data_controllers.VoterBatch.add(batch_name)
+        if app_data_controllers.VoterBatch.get_voter_batch(batch_name) is None:
+            app_data_controllers.VoterBatch.add(batch_name)
 
-        logger.add_log(20,
-                       'Created batch {0} successfully.'.format(batch_name)
-                       )
+            logger.add_log(20,
+                           'Created batch {0} successfully.'.format(batch_name)
+                           )
 
-        flash('Batch {0} created successfully.'.format(batch_name))
+            flash('Batch {0} created successfully.'.format(batch_name))
+        else:
+            flash('Batch {0} already exists.'.format(batch_name))
 
     return redirect('/admin')
 
@@ -198,15 +201,18 @@ def register_section():
                    )
 
     if section_creation_form.validate_on_submit():
-        app_data_controllers.VoterSection.add(section_name,
-                                              batch_name
-                                              )
+        if app_data_controllers.VoterSection.get_voter_section(section_name) is None:
+            app_data_controllers.VoterSection.add(section_name,
+                                                  batch_name
+                                                  )
 
-        logger.add_log(20,
-                       'Created section {0} successfully.'.format(batch_name)
-                       )
+            logger.add_log(20,
+                           'Created section {0} successfully.'.format(batch_name)
+                           )
 
-        flash('Section {0} created successfully.'.format(section_name))
+            flash('Section {0} created successfully.'.format(section_name))
+        else:
+            flash('Section {0} already exists.'.format(section_name))
 
     return redirect('/admin')
 

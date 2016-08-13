@@ -20,6 +20,7 @@ from flask import Markup
 from flask_login import login_user
 from flask_login import logout_user
 from flask_login import current_user
+from flask_login import AnonymousUserMixin
 from wtforms import RadioField
 from wtforms.validators import DataRequired
 
@@ -306,7 +307,9 @@ def vote_thank_you():
 
     :return: Render the thank you page.
     """
-    if not current_user.is_active and current_user.is_authenticated:
+    try:
+        throwaway = not current_user.is_active()
+
         easter_egg_msg = [
             "",
             "May the odds be ever in your candidate's favor...or maybe not.",
@@ -329,12 +332,12 @@ def vote_thank_you():
                        )
 
         return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')),
-                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, easter_egg_msg.length - 1)])
+                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, len(easter_egg_msg) - 1)])
                                )
-
-    logger.add_log(20,
-                   'Someone attempted to visit the thank you. Not sure if it was a voter, admin, or someone anonymous.'
-                   )
+    except TypeError:
+        logger.add_log(20,
+                       'Someone attempted to visit the thank you. Not sure if it was a voter, admin, or someone anonymous.'
+                       )
 
     return redirect('/')
 
@@ -373,7 +376,6 @@ def app_index():
                    'Current visitor is anonymous or inactive. Might need to say "Who you? You ain\'t my nigga."'
                    )
 
-    # TODO: Make the index template.
     return render_template('{0}/index.html'.format(Settings.get_property_value('current_template')),
                            form=login_form
                            )
