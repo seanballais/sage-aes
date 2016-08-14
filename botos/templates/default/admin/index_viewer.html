@@ -1,8 +1,15 @@
 {% extends "default/base.html" %}
 
 {% block content %}
-    <h1 class="voting-splash-header">Sorry mate but this ain't implemented in the vanilla build. Sorry.</h1>
-    <form action="/admin/logout" method="post">
-        <button class="btn btn-danger" name="logout" value="logout">Logout</button>
-    </form>
+    <div class="row-fluid" id="admin-content">
+        <div class="col-xs-12 col-md-offset-2 col-md-8">
+            <h1 class="voting-splash-header">Latest Vote Statistics</h1>
+            <form action="/admin/logout" method="post">
+                <button class="btn btn-danger" name="logout" value="logout">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div id="stat-div"></div>
+    <script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/stats.js"></script>
 {% endblock %}
