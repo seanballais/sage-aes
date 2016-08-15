@@ -8,6 +8,8 @@
 
 """
 
+import json
+import collections
 
 from flask import flash
 from flask import redirect
@@ -21,6 +23,7 @@ from botos import app
 from botos.modules.activity_log import ActivityLogObservable
 from botos.modules.app_data.controllers import Settings
 from botos.modules.admin import controllers as admin_controllers
+from botos.modules.app_data import controllers
 from botos.modules.app_data import controllers as app_data_controllers
 from botos.modules.admin.forms import AdminCreationForm
 from botos.modules.admin.forms import VoterCreationForm
@@ -29,6 +32,7 @@ from botos.modules.admin.forms import VoterBatchCreationForm
 from botos.modules.admin.forms import CandidateCreationForm
 from botos.modules.admin.forms import CandidatePartyCreationForm
 from botos.modules.admin.forms import CandidatePositionCreationForm
+from botos.modules.admin.controllers import Utility
 
 import settings
 
@@ -116,7 +120,7 @@ def register_voters():
                                                                app_data_controllers.VoterBatch.get_batch_by_id(
                                                                    app_data_controllers.VoterSection
                                                                    .get_voter_section_by_id(section_id)
-                                                                   .id
+                                                                   .batch_id
                                                                ).batch_name
                                                                )
         xlsx_generator.generate_xlsx(voter_generator.voter_list)
@@ -352,6 +356,38 @@ def register_position():
               )
 
     return redirect('/admin')
+
+
+@app.route('/admin/get_votes',
+           methods=[
+               'POST',
+               'GET'
+           ])
+def get_votes():
+    """
+    Get the current votes in the system.
+
+    :return: Return a JSON string containing the latest votes of each candidate.
+    """
+    vote_data = collections.OrderedDict()
+    for position in Utility.get_position_list():
+        candidate_votes = collections.OrderedDict()
+        candidate_count = 0
+        for candidate in Utility.get_candidate_of_position_list(position[0]):
+            total_votes = controllers.VoteStore.get_candidate_total_votes(candidate['id'])
+            candidate_votes[candidate_count] = {
+                'votes': total_votes,
+                'name': "{0} {1}".format(candidate['first_name'],
+                                         candidate['last_name']
+                                         ),
+                'profile_url': "{0}".format(candidate['profile_url'])
+            }
+
+            candidate_count += 1
+
+        vote_data[position[1]] = candidate_votes
+
+    return json.dumps(vote_data)
 
 
 @app.route('/admin/logout',

@@ -267,39 +267,6 @@ def send_vote():
     return redirect('/thank_you')
 
 
-@app.route('/get_votes',
-           methods=[
-               'POST',
-               'GET'
-           ])
-def get_votes():
-    """
-    Get the current votes in the system.
-
-    :return: Return a JSON string containing the latest votes of each candidate.
-    """
-    vote_data = collections.OrderedDict()
-    for position in Utility.get_position_list():
-        candidate_votes = collections.OrderedDict()
-        candidate_count = 0
-        for candidate in Utility.get_candidate_of_position_list(position[0]):
-            total_votes = controllers.VoteStore.get_candidate_total_votes(candidate['id'])
-            candidate_votes[candidate_count] = {
-                'votes': total_votes,
-                'name': "{0} {1} ({2})".format(candidate['first_name'],
-                                               candidate['last_name'],
-                                               position[1]
-                                               ),
-                'profile_url': "{0}".format(candidate['profile_url'])
-            }
-
-            candidate_count += 1
-
-        vote_data[position[1]] = candidate_votes
-
-    return json.dumps(vote_data)
-
-
 @app.route('/thank_you')
 def vote_thank_you():
     """

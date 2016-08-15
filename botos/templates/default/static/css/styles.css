@@ -264,3 +264,43 @@ div#rick-ee {
 div#rick-ee button {
     display: block;
 }
+
+div.candidate {
+    display: inline-block;
+    padding: 1%;
+}
+
+div.candidate div.candidate-image {
+    float: left;
+    margin-right: 5%;
+}
+
+div.candidate div.candidate-info {
+    margin-top: 12px;
+}
+
+div.candidate div.candidate-image img {
+    border-radius: 100px;
+    margin-right: 1%;
+}
+
+div.candidate div.candidate-info {
+    display: inline-block;
+}
+
+div.candidate div.candidate-info > p {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+div.candidate span.voter-count {
+    background-color: rgb(60, 135, 235);
+    display: block;
+    color: #ffffff;
+    float: left;
+
+    text-align: center;
+
+    padding: 5px;
+}
