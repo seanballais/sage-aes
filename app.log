@@ -2542,3 +2542,307 @@ NoneType
 NoneType
 2016-08-15 10:29:35,444.444 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
 NoneType
+2016-08-15 10:31:34,364.364 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:31:34,364.364 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:31:34,366.366 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:31:34,366.366 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:31:35,485.485 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:31:35,486.486 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:31:35,488.488 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:31:35,488.488 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:33:14,624.624 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:33:14,624.624 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:33:14,626.626 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:33:14,626.626 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:33:23,090.90 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:33:23,090.90 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:33:23,093.93 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:33:23,093.93 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:36:16,330.330 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:36:16,331.331 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:36:16,334.334 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:36:16,335.335 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:39:04,468.468 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:39:04,469.469 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:39:04,472.472 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:39:04,473.473 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:39:42,597.597 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:39:42,598.598 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:39:42,600.600 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:39:42,600.600 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:39:51,402.402 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:39:51,403.403 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:39:51,406.406 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:39:51,406.406 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:43:12,180.180 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:43:12,180.180 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:43:12,183.183 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:43:12,183.183 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:44,766.766 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:44,766.766 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:44,768.768 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:44,768.768 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:45,959.959 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:45,960.960 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:45,963.963 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:45,963.963 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:46,497.497 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:46,498.498 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:46,500.500 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:46,501.501 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:46,758.758 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:46,760.760 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:46,764.764 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:46,764.764 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:46,883.883 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:46,884.884 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:46,886.886 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:46,887.887 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:44:47,062.62 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:44:47,063.63 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:44:47,068.68 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:44:47,069.69 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:45:01,376.376 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:45:01,377.377 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:45:01,380.380 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:45:01,380.380 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:45:06,464.464 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:45:06,465.465 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:45:06,467.467 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:45:06,467.467 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:45:14,589.589 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:45:14,589.589 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:45:14,593.593 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:45:14,593.593 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:48:30,020.20 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:48:30,021.21 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:48:30,023.23 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:48:30,023.23 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:52:03,338.338 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:52:03,338.338 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:52:03,340.340 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:52:03,340.340 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:52:10,257.257 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:52:10,257.257 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:52:10,261.261 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:52:10,261.261 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:56:15,172.172 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:56:15,173.173 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:56:15,174.174 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:56:15,175.175 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 10:59:01,097.97 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 10:59:01,097.97 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 10:59:01,104.104 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 10:59:01,104.104 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:01:43,640.640 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:01:43,640.640 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:01:43,642.642 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:01:43,642.642 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:01:50,458.458 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:01:50,459.459 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:01:50,462.462 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:01:50,462.462 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:02:02,096.96 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:02:02,099.99 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:02:02,103.103 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:02:02,103.103 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:02:17,157.157 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:02:17,158.158 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:02:17,161.161 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:02:17,161.161 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:03:35,558.558 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:03:35,558.558 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:03:35,560.560 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:03:35,560.560 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:03:44,418.418 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:03:44,418.418 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:03:44,420.420 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:03:44,421.421 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:03:55,071.71 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:03:55,071.71 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:03:55,075.75 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:03:55,075.75 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:04:08,044.44 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:04:08,044.44 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:04:08,048.48 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:04:08,048.48 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:05:22,158.158 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:05:22,158.158 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:05:22,160.160 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:05:22,160.160 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:05:53,704.704 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:05:53,704.704 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:05:53,706.706 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:05:53,706.706 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:05:55,739.739 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:05:55,740.740 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:05:55,742.742 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:05:55,742.742 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:06:19,382.382 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:06:19,382.382 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:06:19,384.384 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:06:19,384.384 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:06:30,781.781 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:06:30,782.782 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:06:30,783.783 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:06:30,783.783 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:07:03,664.664 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:07:03,664.664 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:07:03,667.667 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:07:03,667.667 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:08:16,383.383 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:08:16,384.384 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:08:16,387.387 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:08:16,388.388 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType

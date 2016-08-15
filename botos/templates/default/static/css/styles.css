@@ -295,7 +295,7 @@ div.candidate div.candidate-info > p {
 }
 
 div.candidate span.voter-count {
-    background-color: rgb(60, 135, 235);
+    background-color: rgb(215, 231, 84);
     display: block;
     color: #ffffff;
     float: left;
@@ -303,4 +303,9 @@ div.candidate span.voter-count {
     text-align: center;
 
     padding: 5px;
+}
+
+form.download-stats input {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
