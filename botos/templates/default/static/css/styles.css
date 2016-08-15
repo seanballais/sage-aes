@@ -1,4 +1,4 @@
-@font-face {
+a@font-face {
     font-family: Oswald;
     src: url('/assets/fonts/Oswald-Regular.ttf');
 }
@@ -73,6 +73,24 @@ ul > li > input {
 
 h3.candidate-name {
     font-size: 1.5em;
+}
+
+div.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+div.fullscreen-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 div#flash-messages {

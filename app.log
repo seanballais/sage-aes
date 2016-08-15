@@ -2846,3 +2846,159 @@ NoneType
 NoneType
 2016-08-15 11:08:16,388.388 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
 NoneType
+2016-08-15 11:18:21,557.557 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:18:21,557.557 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:18:21,560.560 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:18:21,560.560 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:18:21,865.865 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:18:21,866.866 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:18:21,869.869 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:18:21,870.870 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:24:30,929.929 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 11:24:30,930.930 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:24:30,933.933 (voting_botos.modules.voting.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:24:30,934.934 (voting_botos.modules.voting.views) | INFO:            write_log() - Logged in user is an admin. Redirecting to the admin panel.
+NoneType
+2016-08-15 11:24:30,955.955 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:24:30,956.956 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:24:30,959.959 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:24:30,959.959 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:24:36,095.95 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:24:36,095.95 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:24:36,098.98 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2016-08-15 11:24:36,098.98 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType
+2016-08-15 11:24:43,072.72 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 7.
+NoneType
+2016-08-15 11:24:43,076.76 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user Eduardo.
+NoneType
+2016-08-15 11:24:43,092.92 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2016-08-15 11:24:43,092.92 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType
+2016-08-15 11:24:43,098.98 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 11:24:43,099.99 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:08:07,685.685 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:08:07,790.790 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:08:38,234.234 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:08:38,234.234 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:08:53,817.817 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:08:53,821.821 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:09:25,520.520 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:09:25,520.520 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:10:19,003.3 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:10:19,004.4 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:14:55,173.173 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:14:55,174.174 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 12:15:14,965.965 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 12:15:14,966.966 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 19:30:16,331.331 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 19:30:16,453.453 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 20:08:56,930.930 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 20:08:56,962.962 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 20:09:11,180.180 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 20:09:11,181.181 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 20:09:21,115.115 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 20:09:21,115.115 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:02:55,807.807 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:02:55,856.856 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:14:39,862.862 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:14:39,862.862 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:14:40,221.221 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:14:40,222.222 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:14:50,879.879 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:14:50,880.880 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:15:32,858.858 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:15:32,861.861 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:15:34,819.819 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:15:34,819.819 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:15:45,509.509 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:15:45,509.509 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:15:52,405.405 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:15:52,406.406 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:16:12,181.181 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:16:12,181.181 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:16:27,258.258 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:16:27,259.259 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:17:18,868.868 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:17:18,868.868 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:17:34,539.539 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:17:34,539.539 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:18:21,597.597 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:18:21,598.598 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:19:21,243.243 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:19:21,244.244 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2016-08-15 21:38:37,731.731 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2016-08-15 21:38:37,764.764 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
