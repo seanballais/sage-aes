@@ -2,7 +2,6 @@
 {% extends "default/base.html" %}
 
 {% block content %}
-    <div id="bg-curtain"></div>
     <div class="row-fluid">
         <div id="banner-2015">
             <img id="logo" class="img-responsive center-block" src="/assets/img/ee/logo-2015.png" height="128" width="94">
@@ -10,8 +9,8 @@
         </div>
         <div id="base-banner" class="header-text col-xs-12 col-md-6 col-centered">
             <img id="banner-2016" src="/assets/img/banner.png" width="300px">
-            <h1>Vote Now<span id="banner-title-2015">!</span></h1>
-            <h5>For the next set of voters of PSHS-EVC Student Alliance Officers</h5>
+            <h1>Vote now<span id="banner-title-2015">!</span></h1>
+            <h3>For the next set of PSHS-EVC Student Alliance Officers</h3>
         </div>
         <div class="col-xs-12 col-md-4 col-centered">
             <form id="login-form" action="/login" method="post" name="login">
@@ -20,10 +19,22 @@
                     <!-- /assets/bg.txt -->
                     {{ form.username(size=40, class="form-control") }}
                     {{ form.password(size=40, class="form-control") }}
-                    <input id="login-submit" class="btn btn-info" type="submit" value="Sign in">
+                    <input id="login-submit" class="btn btn-primary" type="submit" value="Sign in">
                 </div>
             </form>
-            <div class="footer-text">
+            <form id="login-form-2015" action="/login" method="post">
+                <div class="form-group center-block">
+                    {{ form.hidden_tag() }}
+                    {{ form.username(class="form-control") }}
+                    <div class="input-group">
+                        {{ form.password(class="form-control") }}
+                        <span class="input-group-btn">
+                            <input id="login-submit" class="btn btn-primary" type="submit" value="Login">
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div id="footer-2016" class="footer-text">
                 <h6>
                     <small>
                         Copyright © 2016. Sean Francis N. Ballais and PSHS-EVC Student Alliance.<br>All Rights Reserved.<br><small><span id="design-2015">Reminsce the 2015 design.</span></small>
@@ -31,9 +42,20 @@
                 </h6>
             </div>
         </div>
+        <div id="footer-2015">
+            <footer>
+                <p>
+                    Copyright © 2016 Sean Francis N. Ballais and PSHS-EVC Student Alliance. All rights reserved.<br>Built and powered by <a href="https://www.python.org">Python</a>, <a href="https://github.com/seanballais/botos">Botos</a>, <a href="https://www.docker.com">Docker</a>, and <a href="http://getbootstrap.com">Bootstrap</a>.
+                </p>
+            </footer>
+        </div>
     </div>
     <div id="agri-ee" class="col-xs-12 col-centered">
         <img src="/assets/img/ee/agriculture-heart.png" width="800">
+    </div>
+    <div id="bg-curtain"></div>
+    <div id="fork-me-ribbon">
+        <a href="https://github.com/seanballais/sage-aes"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/assets/img/ee/fork-me-ribbon.png" alt="Fork me on GitHub" data-canonical-src="/assets/img/ee/fork-me-ribbon.png"></a>
     </div>
     <script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="/assets/js/keyboard.min.js"></script>
