@@ -1,16 +1,23 @@
 a@font-face {
-    font-family: Oswald;
+    font-family: 'Oswald';
     src: url('/assets/fonts/Oswald-Regular.ttf');
 }
 
 @font-face {
-    font-family: Oswald-Bold;
+    font-family: 'Oswald-Bold';
     src: url('/assets/fonts/Oswald-Bold.ttf');
 }
 
 @font-face {
-    font-family: Oswald-Light;
+    font-family: 'Oswald-Light';
     src: url('/assets/fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Graduate';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Graduate.ttf');
 }
 
 html,
@@ -187,10 +194,40 @@ div#agri-ee img {
     margin: 0 auto;
 }
 
+div#bg-curtain {
+    background-color: rgb(122, 201, 231);
+
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+div#banner-2015 {
+    display: none;
+}
+
+span#design-2015 {
+    cursor: pointer;
+}
+
+span#design-2015:hover {
+    text-decoration: underline;
+}
+
+.design-2015 {
+    font-family: 'Graduate';
+    font-size: 8.5em;
+    font-weight: 700;
+}
+
 div.header-text,
 div.header-text-2,
 div.header-text-3 {
-    font-family: Oswald;
+    font-family: 'Oswald';
     color: #ffffff;
 
     margin-top: 2%;
@@ -204,7 +241,7 @@ div.header-text {
 }
 
 div.header-text-2 {
-    font-family: Oswald;
+    font-family: 'Oswald';
     color: #ffffff;
 
     margin-top: 2%;
@@ -227,7 +264,7 @@ div.header-text-2 img {
 }
 
 div.header-text-3 h1 {
-    font-family: Oswald;
+    font-family: 'Oswald';
     font-size: 6em;
 }
 
@@ -258,7 +295,7 @@ h6#ee-nicolas:hover {
 }
 
 div#thank-you-instructions {
-    font-family: Oswald;
+    font-family: 'Oswald';
 }
 
 div#thank-you-instructions div.checkmark {

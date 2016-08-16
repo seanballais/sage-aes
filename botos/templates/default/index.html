@@ -1,17 +1,23 @@
+
 {% extends "default/base.html" %}
 
 {% block content %}
-    <!-- #AbsNiMico -->
+    <div id="bg-curtain"></div>
     <div class="row-fluid">
-        <div class="header-text col-xs-12 col-md-6 col-centered">
-            <img src="/assets/img/banner.png" width="300px">
-            <h1>Vote Now</h1>
+        <div id="banner-2015">
+            <img id="logo" class="img-responsive center-block" src="/assets/img/ee/logo-2015.png" height="128" width="94">
+            <img id="banner" class="img-responsive center-block" src="/assets/img/ee/banner-2015.png" height="80" width="422">
+        </div>
+        <div id="base-banner" class="header-text col-xs-12 col-md-6 col-centered">
+            <img id="banner-2016" src="/assets/img/banner.png" width="300px">
+            <h1>Vote Now<span id="banner-title-2015">!</span></h1>
             <h5>For the next set of voters of PSHS-EVC Student Alliance Officers</h5>
         </div>
         <div class="col-xs-12 col-md-4 col-centered">
             <form id="login-form" action="/login" method="post" name="login">
                 <div class="input-group center-block">
                     {{ form.hidden_tag() }}
+                    <!-- /assets/bg.txt -->
                     {{ form.username(size=40, class="form-control") }}
                     {{ form.password(size=40, class="form-control") }}
                     <input id="login-submit" class="btn btn-info" type="submit" value="Sign in">
@@ -20,16 +26,16 @@
             <div class="footer-text">
                 <h6>
                     <small>
-                        Copyright © 2016. Sean Francis N. Ballais and PSHS-EVC Student Alliance.<br>All Rights Reserved.
+                        Copyright © 2016. Sean Francis N. Ballais and PSHS-EVC Student Alliance.<br>All Rights Reserved.<br><small><span id="design-2015">Reminsce the 2015 design.</span></small>
                     </small>
                 </h6>
             </div>
-        </div>-->
+        </div>
     </div>
     <div id="agri-ee" class="col-xs-12 col-centered">
         <img src="/assets/img/ee/agriculture-heart.png" width="800">
     </div>
     <script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="/assets/js/keyboard.min.js"></script>
-    <!--<script type="text/javascript" src="/assets/js/ee-index.js"></script>-->
+    <script type="text/javascript" src="/assets/js/ee-index.js"></script>
 {% endblock %}
