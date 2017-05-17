@@ -8,22 +8,20 @@
 
 """
 
-import json
-import collections
 
 from flask import flash
 from flask import redirect
 from flask import request
 from flask import render_template
-from flask import Markup
 from flask_login import current_user
 from flask_login import logout_user
+from openpyxl import load_workbook
 
 from botos import app
 from botos.modules.activity_log import ActivityLogObservable
 from botos.modules.app_data.controllers import Settings
 from botos.modules.admin import controllers as admin_controllers
-from botos.modules.app_data import controllers
+from botos.modules.admin.utility import Utility
 from botos.modules.app_data import controllers as app_data_controllers
 from botos.modules.admin.forms import AdminCreationForm
 from botos.modules.admin.forms import VoterCreationForm
@@ -32,7 +30,6 @@ from botos.modules.admin.forms import VoterBatchCreationForm
 from botos.modules.admin.forms import CandidateCreationForm
 from botos.modules.admin.forms import CandidatePartyCreationForm
 from botos.modules.admin.forms import CandidatePositionCreationForm
-from botos.modules.admin.controllers import Utility
 
 import settings
 
@@ -50,8 +47,6 @@ logger = ActivityLogObservable.ActivityLogObservable('admin_' + __name__)
 def register_admin():
     """
     Register an admin.
-
-    :return: Return a JSON response.
     """
     admin_creation_form = AdminCreationForm()
     logger.add_log(20,
@@ -95,50 +90,50 @@ def register_admin():
 def register_voters():
     """
     Register voters and generate random voter IDs and passwords.
-
-    :return: Return a JSON response.
     """
     # Generate voters
     voter_creation_form = VoterCreationForm().new()
-    num_voters          = voter_creation_form.num_voters.data
     section_id          = voter_creation_form.section.data
 
-    logger.add_log(20,
-                   'Creating {0} new voters.'.format(num_voters)
-                   )
+    logger.add_log(20, 'Creating new voters from Excel file.')
 
     if voter_creation_form.validate_on_submit():
-        voter_generator = admin_controllers.VoterGenerator()
-        voter_generator.generate(num_voters,
-                                 section_id
-                                 )
+        voter_information = request.files[voter_creation_form.voters.name]
+        file_ext = Utility.get_file_extension(voter_information.filename)
+        if file_ext != '' and file_ext == 'xlsx':
+            logger.add_log(20, 'Uploaded voter information for {0}.'.format(app_data_controllers.VoterSection.
+                                                                            get_voter_section_by_id(section_id)
+                                                                            .section_name))
 
-        xlsx_generator = admin_controllers.VoterExcelGenerator(num_voters,
-                                                               app_data_controllers.VoterSection.get_voter_section_by_id(
-                                                                   section_id
-                                                               ),
-                                                               app_data_controllers.VoterBatch.get_batch_by_id(
-                                                                   app_data_controllers.VoterSection
-                                                                   .get_voter_section_by_id(section_id)
-                                                                   .batch_id
-                                                               ).batch_name
-                                                               )
-        xlsx_generator.generate_xlsx(voter_generator.voter_list)
+            workbook = load_workbook(voter_information)
+            voter_sheet = workbook.worksheets[0]
 
-        success_msg = 'Successfully created {0} new voters.'.format(num_voters)
-        logger.add_log(20,
-                       success_msg
-                       )
+            logger.add_log(20, 'Generating voters from voter sheet.')
+            admin_controllers.VoterGenerator.generate(voter_sheet, section_id)
+        else:
+            logger.add_log(20, 'Uploaded voter information with unsupported file extension. Use .xlsx.')
+            flash('Use .xlsx for voter information.')
+
+        success_msg = 'Successfully created new voters for {0}.'.format(app_data_controllers.VoterSection.
+                                                                        get_voter_section_by_id(section_id)
+                                                                        .section_name)
+        logger.add_log(20, success_msg)
 
         flash(success_msg)
-        flash(Markup('<a href="{0}" target="_blank">Download Voter List (XLSX)</a>'.format(xlsx_generator.xlsx_link)))
+    else:
+        # Temporary hack while client-side form validation is not yet implemented.
+        error_msg = 'Error while creating voters. Make sure you upload an .xlsx file containing the ' \
+                    'voter information, and select a section.'  # ;-)
+        logger.add_log(20, error_msg)
+        flash(error_msg)
 
     return redirect('/admin')
 
 
 @app.route('/admin/generate_stats',
            methods=[
-               'POST'
+               'POST',
+               'GET'
            ])
 def generate_stats():
     """
@@ -146,8 +141,6 @@ def generate_stats():
     """
     pdf_generator = admin_controllers.VotePDFGenerator()
     pdf_generator.generate_pdf()
-
-    flash(Markup('<a href="/{0}" target="_blank">Download Voter Statistics (PDF)</a>'.format(pdf_generator.pdf_link)))
 
     return redirect('/admin')
 
@@ -159,8 +152,6 @@ def generate_stats():
 def register_batch():
     """
     Register a voter batch.
-
-    :return: Return a JSON response.
     """
     batch_creation_form = VoterBatchCreationForm()
     batch_name          = batch_creation_form.batch_name.data
@@ -170,16 +161,13 @@ def register_batch():
                    )
 
     if batch_creation_form.validate_on_submit():
-        if app_data_controllers.VoterBatch.get_voter_batch(batch_name) is None:
-            app_data_controllers.VoterBatch.add(batch_name)
+        app_data_controllers.VoterBatch.add(batch_name)
 
-            logger.add_log(20,
-                           'Created batch {0} successfully.'.format(batch_name)
-                           )
+        logger.add_log(20,
+                       'Created batch {0} successfully.'.format(batch_name)
+                       )
 
-            flash('Batch {0} created successfully.'.format(batch_name))
-        else:
-            flash('Batch {0} already exists.'.format(batch_name))
+        flash('Batch {0} created successfully.'.format(batch_name))
 
     return redirect('/admin')
 
@@ -191,8 +179,6 @@ def register_batch():
 def register_section():
     """
     Register a voter section.
-
-    :return: Return a JSON response.
     """
     section_creation_form = VoterSectionCreationForm().new()
     section_name          = section_creation_form.section_name.data
@@ -205,18 +191,15 @@ def register_section():
                    )
 
     if section_creation_form.validate_on_submit():
-        if app_data_controllers.VoterSection.get_voter_section(section_name) is None:
-            app_data_controllers.VoterSection.add(section_name,
-                                                  batch_name
-                                                  )
+        app_data_controllers.VoterSection.add(section_name,
+                                              batch_name
+                                              )
 
-            logger.add_log(20,
-                           'Created section {0} successfully.'.format(batch_name)
-                           )
+        logger.add_log(20,
+                       'Created section {0} successfully.'.format(batch_name)
+                       )
 
-            flash('Section {0} created successfully.'.format(section_name))
-        else:
-            flash('Section {0} already exists.'.format(section_name))
+        flash('Section {0} created successfully.'.format(section_name))
 
     return redirect('/admin')
 
@@ -228,8 +211,6 @@ def register_section():
 def register_candidate():
     """
     Register a candidate.
-
-    :return: Return a JSON response.
     """
     candidate_creation_form = CandidateCreationForm().new()
 
@@ -248,12 +229,12 @@ def register_candidate():
                    )
 
     if candidate_creation_form.validate():
-        file_ext = admin_controllers.Utility.get_file_extension(candidate_profile.filename)
+        file_ext = Utility.get_file_extension(candidate_profile.filename)
         filename = '{0}_{1}.{2}'.format(candidate_first_name,
                                         candidate_last_name,
                                         file_ext
                                         )
-        if file_ext != '' and admin_controllers.Utility.file_extensions_allowed(file_ext):
+        if file_ext != '' and Utility.file_extensions_allowed(file_ext):
             profile_image = request.files[candidate_creation_form.profile_pic.name]
             profile_image.save('{0}/{1}'.format(settings.PROF_DIRECTORY,
                                                 filename
@@ -295,8 +276,6 @@ def register_candidate():
 def register_party():
     """
     Register a party.
-
-    :return: Return a JSON response.
     """
     party_creation_form = CandidatePartyCreationForm()
 
@@ -325,8 +304,6 @@ def register_party():
 def register_position():
     """
     Register a position.
-
-    :return: Return a JSON response.
     """
     position_creation_form = CandidatePositionCreationForm()
 
@@ -356,38 +333,6 @@ def register_position():
               )
 
     return redirect('/admin')
-
-
-@app.route('/admin/get_votes',
-           methods=[
-               'POST',
-               'GET'
-           ])
-def get_votes():
-    """
-    Get the current votes in the system.
-
-    :return: Return a JSON string containing the latest votes of each candidate.
-    """
-    vote_data = collections.OrderedDict()
-    for position in Utility.get_position_list():
-        candidate_votes = collections.OrderedDict()
-        candidate_count = 0
-        for candidate in Utility.get_candidate_of_position_list(position[0]):
-            total_votes = controllers.VoteStore.get_candidate_total_votes(candidate['id'])
-            candidate_votes[candidate_count] = {
-                'votes': total_votes,
-                'name': "{0} {1}".format(candidate['first_name'],
-                                         candidate['last_name']
-                                         ),
-                'profile_url': "{0}".format(candidate['profile_url'])
-            }
-
-            candidate_count += 1
-
-        vote_data[position[1]] = candidate_votes
-
-    return json.dumps(vote_data)
 
 
 @app.route('/admin/logout',

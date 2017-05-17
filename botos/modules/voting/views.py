@@ -11,7 +11,6 @@
 
 import json
 import collections
-import random
 
 from flask import render_template
 from flask import flash
@@ -20,7 +19,6 @@ from flask import Markup
 from flask_login import login_user
 from flask_login import logout_user
 from flask_login import current_user
-from flask_login import AnonymousUserMixin
 from wtforms import RadioField
 from wtforms.validators import DataRequired
 
@@ -30,7 +28,7 @@ from botos import login_manager
 from botos.modules.activity_log import ActivityLogObservable
 from botos.modules.app_data.controllers import Settings
 from botos.modules.app_data.models import User
-from botos.modules.admin.controllers import Utility
+from botos.modules.admin.utility import Utility
 from botos.modules.voting.forms import LoginForm
 from botos.modules.voting.forms import VotingForm
 
@@ -127,9 +125,13 @@ def generate_candidate_script_code(candidate_position):
         '\t\t\t$("a.' + str_position + '").click(function() {\n'
         '\t\t\t\tvar input_clicked = $(this).parent().siblings("input");\n'
         '\t\t\t\tif (input_clicked.is(":checked")) {\n'
+        'console.log("Clicked before.");'
+        'console.log(input_clicked);'
         '\t\t\t\t\t$("a.' + str_position + '").removeClass("selected-glow");\n'
         '\t\t\t\t\tinput_clicked.prop("checked", false);\n'
         '\t\t\t\t} else {\n'
+        'console.log("Oh really?");'
+        'console.log(input_clicked);'
         '\t\t\t\t\tinput_clicked.prop("checked", true);\n'
         '\t\t\t\t\t$("a.' + str_position + '").removeClass("selected-glow");\n'
         '\t\t\t\t\t$(this).addClass("selected-glow");\n'
@@ -267,6 +269,39 @@ def send_vote():
     return redirect('/thank_you')
 
 
+@app.route('/get_votes',
+           methods=[
+               'POST',
+               'GET'
+           ])
+def get_votes():
+    """
+    Get the current votes in the system.
+
+    :return: Return a JSON string containing the latest votes of each candidate.
+    """
+    vote_data = collections.OrderedDict()
+    for position in Utility.get_position_list():
+        candidate_votes = collections.OrderedDict()
+        candidate_count = 0
+        for candidate in Utility.get_candidate_of_position_list(position[0]):
+            total_votes = controllers.VoteStore.get_candidate_total_votes(candidate['id'])
+            candidate_votes[candidate_count] = {
+                'votes': total_votes,
+                'name': "{0} {1} ({2})".format(candidate['first_name'],
+                                               candidate['last_name'],
+                                               position[1]
+                                               ),
+                'profile_url': "{0}".format(candidate['profile_url'])
+            }
+
+            candidate_count += 1
+
+        vote_data[position[1]] = candidate_votes
+
+    return json.dumps(vote_data)
+
+
 @app.route('/thank_you')
 def vote_thank_you():
     """
@@ -274,134 +309,16 @@ def vote_thank_you():
 
     :return: Render the thank you page.
     """
-    try:
-        throwaway = not current_user.is_active()
-
-        easter_egg_msg = [
-            "",
-            "May the odds be ever in your candidate's favor...or maybe not.",
-            "",
-            "",
-            "Remember, walang forever sa high school.",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "#seanwasir",
-            "Tara! Agriculture na tayo!",
-            "You, you! All of you! Do you know me? Do you know my creator?",
-            "Brix was (definitely) here.",
-            "Pilipin Sayans Whhhyyyyy. Huhuhuhuhuh. T.T",
-            "Make PSHS-EVC great again."
-        ]
-
+    if not current_user.is_active():
         logger.add_log(20,
                        'Voter {0} finished voting. Accessing thank you page.'.format(current_user.id)
                        )
 
-        return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')),
-                               easter_egg_msg=Markup(easter_egg_msg[random.randint(0, len(easter_egg_msg) - 1)])
-                               )
-    except TypeError:
-        logger.add_log(20,
-                       'Someone attempted to visit the thank you. Not sure if it was a voter, admin, or someone anonymous.'
-                       )
+        return render_template('{0}/thank-you.html'.format(Settings.get_property_value('current_template')))
+
+    logger.add_log(20,
+                   'Someone attempted to visit the thank you. Not sure if it was a voter, admin, or someone anonymous.'
+                   )
 
     return redirect('/')
 
@@ -440,6 +357,7 @@ def app_index():
                    'Current visitor is anonymous or inactive. Might need to say "Who you? You ain\'t my nigga."'
                    )
 
+    # TODO: Make the index template.
     return render_template('{0}/index.html'.format(Settings.get_property_value('current_template')),
                            form=login_form
                            )
