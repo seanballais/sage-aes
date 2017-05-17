@@ -4060,3 +4060,237 @@ NoneType
 NoneType
 2016-08-17 10:25:23,134.134 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
 NoneType
+2017-05-17 12:33:07,637.637 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 12:33:07,680.680 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 12:33:55,115.115 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user root.
+NoneType: None
+2017-05-17 12:33:55,119.119 (voting_botos.modules.voting.views) | INFO:            write_log() - Invalid credentials entered for user root.
+NoneType: None
+2017-05-17 12:33:55,135.135 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 12:33:55,135.135 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 12:37:15,025.25 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin.
+NoneType: None
+2017-05-17 12:37:15,475.475 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin logged in successfully.
+NoneType: None
+2017-05-17 12:37:15,475.475 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: admin
+NoneType: None
+2017-05-17 12:37:15,513.513 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 12:37:15,514.514 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 12:37:15,516.516 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 12:37:15,517.517 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 12:40:50,599.599 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 12:40:50,599.599 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 12:40:50,601.601 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 12:40:50,602.602 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 12:40:53,699.699 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 12:40:53,723.723 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 12:40:53,724.724 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 12:40:53,725.725 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 12:42:47,337.337 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 12:42:47,337.337 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 12:42:47,339.339 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 12:42:47,339.339 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 12:47:58,883.883 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 12:47:58,883.883 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 12:47:58,885.885 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 12:47:58,886.886 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 13:59:08,774.774 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 13:59:08,789.789 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 13:59:08,796.796 (voting_botos.modules.voting.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 13:59:08,796.796 (voting_botos.modules.voting.views) | INFO:            write_log() - Logged in user is an admin. Redirecting to the admin panel.
+NoneType: None
+2017-05-17 13:59:08,864.864 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 13:59:08,864.864 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 13:59:08,866.866 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 13:59:08,867.867 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 14:00:11,953.953 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:00:11,957.957 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user admin.
+NoneType: None
+2017-05-17 14:00:11,978.978 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:00:11,979.979 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType: None
+2017-05-17 14:00:11,988.988 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:00:11,988.988 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:00:37,381.381 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:00:37,382.382 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:00:46,438.438 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:00:46,438.438 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:01:16,236.236 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:01:16,237.237 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:01:33,455.455 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin.
+NoneType: None
+2017-05-17 14:01:33,867.867 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin logged in successfully.
+NoneType: None
+2017-05-17 14:01:33,868.868 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: admin
+NoneType: None
+2017-05-17 14:01:33,885.885 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:01:33,886.886 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:01:33,887.887 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:01:33,888.888 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 14:01:35,794.794 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:01:35,794.794 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:01:35,796.796 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:01:35,796.796 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 14:01:50,668.668 (admin_botos.modules.admin.views) | INFO:            write_log() - Attempting to create admin admin-viewer.
+NoneType: None
+2017-05-17 14:01:50,671.671 (admin_botos.modules.admin.views) | INFO:            write_log() - Created admin admin-viewer with role viewer successfully.
+NoneType: None
+2017-05-17 14:01:51,164.164 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:01:51,164.164 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:01:51,166.166 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:01:51,166.166 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 14:01:52,579.579 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:01:52,581.581 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user admin.
+NoneType: None
+2017-05-17 14:01:52,599.599 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:01:52,599.599 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType: None
+2017-05-17 14:01:52,606.606 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:01:52,607.607 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:01:58,090.90 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin-viewer.
+NoneType: None
+2017-05-17 14:01:58,501.501 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin-viewer logged in successfully.
+NoneType: None
+2017-05-17 14:01:58,501.501 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: viewer
+NoneType: None
+2017-05-17 14:01:58,519.519 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:01:58,519.519 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 2.
+NoneType: None
+2017-05-17 14:01:58,521.521 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:01:58,521.521 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType: None
+2017-05-17 14:02:06,718.718 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:02:06,718.718 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 2.
+NoneType: None
+2017-05-17 14:02:06,719.719 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:02:06,720.720 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType: None
+2017-05-17 14:02:59,092.92 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 2.
+NoneType: None
+2017-05-17 14:02:59,095.95 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user admin-viewer.
+NoneType: None
+2017-05-17 14:02:59,110.110 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:02:59,111.111 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType: None
+2017-05-17 14:02:59,118.118 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:02:59,118.118 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:41:05,311.311 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:41:05,312.312 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:45:17,024.24 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin.
+NoneType: None
+2017-05-17 14:45:18,003.3 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin logged in successfully.
+NoneType: None
+2017-05-17 14:45:18,004.4 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: admin
+NoneType: None
+2017-05-17 14:45:18,140.140 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:45:18,140.140 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:45:18,142.142 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:45:18,143.143 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType: None
+2017-05-17 14:51:03,599.599 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType: None
+2017-05-17 14:51:03,604.604 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user admin.
+NoneType: None
+2017-05-17 14:51:03,978.978 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:51:03,979.979 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType: None
+2017-05-17 14:51:04,008.8 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:51:04,008.8 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None
+2017-05-17 14:51:24,580.580 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin-viewer.
+NoneType: None
+2017-05-17 14:51:24,992.992 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin-viewer logged in successfully.
+NoneType: None
+2017-05-17 14:51:24,992.992 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: viewer
+NoneType: None
+2017-05-17 14:51:25,008.8 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:51:25,008.8 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 2.
+NoneType: None
+2017-05-17 14:51:25,010.10 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType: None
+2017-05-17 14:51:25,010.10 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is a viewer. Render the vote statistics.
+NoneType: None
+2017-05-17 14:51:32,197.197 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 2.
+NoneType: None
+2017-05-17 14:51:32,202.202 (admin_botos.modules.admin.views) | INFO:            write_log() - Logging out user admin-viewer.
+NoneType: None
+2017-05-17 14:51:32,243.243 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType: None
+2017-05-17 14:51:32,243.243 (admin_botos.modules.admin.views) | INFO:            write_log() - Current visitor is anonymous. Might need to say "Who you? You ain't my nigga. Identify!"
+NoneType: None
+2017-05-17 14:51:32,251.251 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType: None
+2017-05-17 14:51:32,251.251 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType: None

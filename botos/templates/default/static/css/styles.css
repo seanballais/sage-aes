@@ -35,11 +35,13 @@ a.radio-picture {
     width: 150px;
     opacity: 1.0;
     transition: all 0.3s ease;
+    border-radius: 100%;
 }
 
 a.radio-picture:hover {
     opacity: 0.75;
     border: 7px solid #33ccff;
+    border-radius: 100%;
 }
 
 .selected-glow {
