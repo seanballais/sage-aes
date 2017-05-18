@@ -14,7 +14,13 @@ $(document).ready(function() {
         'AHHH! The horror!',
         'Let me go!',
         'Please!',
-        'Rick roll someone else!'
+        'Rick roll someone else!',
+        'Why, oh, why?',
+        'WHO IS RESPONSIBLE FOR THIS?',
+        'COME ON, WHY!!!',
+        'I PROMISE TO CONFESS TO MY CRUSH PERSONALLY.',
+        'Let me out!',
+        'Time to confess to your crush. He he he.'
     ];
     $('div#rick-ee button').click(function() {
         if (clickTimes < message.length) {
