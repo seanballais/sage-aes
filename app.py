@@ -34,8 +34,8 @@ def static_content_view(filename):
     return send_from_directory('{0}/botos/botos-content/'.format(app.config['BASE_DIR']),
                                filename
                                )
-
-app.run(host=settings.APP_HOST,
-        port=settings.APP_PORT,
-        debug=settings.DEBUG
-        )
+if __name__ == "__main__":
+    app.run(host=settings.APP_HOST,
+            port=settings.APP_PORT,
+            debug=settings.DEBUG
+            )
