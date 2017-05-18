@@ -40,12 +40,13 @@ a.radio-picture {
 
 a.radio-picture:hover {
     opacity: 0.75;
-    border: 7px solid #33ccff;
+    border: 7px solid #ede749;
     border-radius: 100%;
 }
 
 .selected-glow {
-    border: 7px solid #33ccff;
+    border: 7px solid #ede749;
+    border-radius: 100%;
 }
 
 div.col-centered {

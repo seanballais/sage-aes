@@ -1,21 +1,5 @@
 var audio = false;
 
-// Ma'am Agri Easter Egg
-keyboardJS.bind('shift + alt > a > g > r > i', function(e) {
-    if (!audio) {
-        audio = new Audio('/assets/audio/ee/angelic-voices.wav');
-    }
-
-    if (audio.paused) {
-        $('div#agri-ee').fadeIn(1250, function() {
-            $('div#agri-ee').delay(750).fadeOut(350);
-        });
-        audio.play();
-    }
-
-    console.log('Because Ma\'am Agri is ❤.');
-});
-
 $(document).ready(function() {
     $('span#design-2015').click(function() {
         $('div#bg-curtain').fadeIn(1000);
