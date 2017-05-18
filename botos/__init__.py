@@ -40,3 +40,6 @@ if not Settings.property_exists('title'):
 # Initialize the Flask login manager
 login_manager = LoginManager()
 login_manager.init_app(app)
+
+import botos.modules.admin.views
+import botos.modules.voting.views

@@ -4294,3 +4294,53 @@ NoneType: None
 NoneType: None
 2017-05-17 14:51:32,251.251 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
 NoneType: None
+2017-05-18 09:22:00,737.737 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 09:22:00,757.757 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 09:22:45,893.893 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 09:22:45,894.894 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 09:23:12,532.532 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 09:23:12,533.533 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 12:37:14,290.290 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 12:37:14,338.338 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 12:54:28,947.947 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 12:54:28,948.948 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 13:08:10,295.295 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 13:08:10,313.313 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
+2017-05-18 13:12:20,687.687 (voting_botos.modules.voting.views) | INFO:            write_log() - Attempting to log in user admin.
+NoneType
+2017-05-18 13:12:21,235.235 (voting_botos.modules.voting.views) | INFO:            write_log() - User admin logged in successfully.
+NoneType
+2017-05-18 13:12:21,235.235 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Current user role: admin
+NoneType
+2017-05-18 13:12:21,485.485 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2017-05-18 13:12:21,486.486 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType
+2017-05-18 13:12:21,488.488 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2017-05-18 13:12:21,489.489 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType
+2017-05-18 13:12:29,131.131 (admin_botos.modules.admin.views) | INFO:            write_log() - Accessing admin index page.
+NoneType
+2017-05-18 13:12:29,131.131 (voting_botos.modules.voting.views) | DEBUG:            write_log() - Getting user by ID of 1.
+NoneType
+2017-05-18 13:12:29,134.134 (admin_botos.modules.admin.views) | INFO:            write_log() - Current user is authenticated. Displaying voting page.
+NoneType
+2017-05-18 13:12:29,134.134 (admin_botos.modules.admin.views) | INFO:            write_log() - Logged in user is an admin. Render admin panel.
+NoneType
+2017-05-18 21:57:02,893.893 (voting_botos.modules.voting.views) | INFO:            write_log() - Accessing index page.
+NoneType
+2017-05-18 21:57:02,924.924 (voting_botos.modules.voting.views) | INFO:            write_log() - Current visitor is anonymous or inactive. Might need to say "Who you? You ain't my nigga."
+NoneType
